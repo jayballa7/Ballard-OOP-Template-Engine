@@ -1,3 +1,25 @@
-.team-heading {
-    background-color: #0572af;
+body {
+    background-image: url(noisy_net.png);
+    background-repeat: repeat;
+}
+
+.jumbotron {
+    font-weight: bolder;
+    color: white;
+    text-shadow: 3px 3px black;
+    background: radial-gradient(#488df5, #8b4d8d);
+    border-bottom: 4px solid #4d0153;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.card-title {
+    color: #300146;
+    text-shadow: 1px 1px black;
+}
+
+.list-group-item {
+    font-weight: bold;
 }

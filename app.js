@@ -9,8 +9,6 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./Libs/htmlRenderer");
 
-console.log(render);
-
 let teamArray = [];
 let teamCount = 0;
 
@@ -57,7 +55,7 @@ async function getTeam() {
             ]) .then(async function(obj) {
                 const newManager= new Manager(responses.name,responses.id,responses.email,obj.office);
                 teamArray.push(newManager);
-                while(teamCount <= obj.members) {
+                while(teamCount < obj.members) {
                     const prompt2 = await inquirer.prompt(questions)
                     .then(async function(res) {
                         if(res.role === "Engineer" || res.role === "engineer") {
