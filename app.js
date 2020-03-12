@@ -113,7 +113,8 @@ function generatePage() {
     if(!fs.existsSync(OUTPUT_DIR)) {
         fs.mkdirSync(OUTPUT_DIR);
     };
-    fs.writeFileSync(outputPath, render(teamArray));
+    let renderPage = render(teamArray);
+    fs.writeFileSync(outputPath, renderPage);
 };
 
 getTeam();
