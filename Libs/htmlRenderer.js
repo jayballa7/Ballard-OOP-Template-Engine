@@ -20,7 +20,7 @@ const render = employees => {
   );
 
   return renderMain(html.join(""));
-
+  
 };
 
 const renderManager = manager => {
